@@ -8,7 +8,10 @@ const users = [
     {
       username: "Eddie",
       email: "eddievedder@gmail.com",
-      thought: [],
+    },
+    {
+      username: "Kurt",
+      email: "kurtcobain@gmail.com",
     },
   ];
 

@@ -1,12 +1,12 @@
-const {User, Thoughts} = require('../models');
+const {User, Thought} = require('../models');
 
 module.exports = {
     async getThoughts(req, res) {
         try{
-         const thoughts = await Thoughts.find();
-         res.status(200).json(thoughts)
+         const thought = await Thought.find({});
+         res.status(200).json(thought);
         }catch(err){
-        res.status(500).json(err)
+        res.status(500).json(err);
         }
-    }
+    },
 }
