@@ -4,7 +4,7 @@ const reactionSchema = require('./Reaction')
 
 const moment = require('moment');
 
-//Schema to create Thought Model
+//Schema to create Thoughts Model
 
 const thoughtSchema = new Schema(
     {
