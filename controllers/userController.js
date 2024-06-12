@@ -5,10 +5,10 @@ module.exports = {
   async getUsers(req, res) {
     try {
       const users = await User.find({});
-      res.status(200).json(users);
+      return res.status(200).json(users);
     } catch (err) {
       console.log(err);
-      res.status(500).json(err);
+      return res.status(500).json(err);
     }
   },
   //Get a single user
@@ -19,11 +19,11 @@ module.exports = {
       });
 
       if (!user) {
-        res.status(404).json({ message: "No user found with that id.!" });
+       return res.status(404).json({ message: "No user found with that id.!" });
       }
       res.status(200).json(user);
     } catch (err) {
-      res.status(500).json(err);
+      return res.status(500).json(err);
     }
   },
 
@@ -46,11 +46,11 @@ module.exports = {
         { runValidators: true, new: true }
       );
       if (!user) {
-        res.status(404).json({ message: "No user found with that id.!" });
+        return res.status(404).json({ message: "No user found with that id.!" });
       }
-      res.status(200).json(user);
+      return res.status(200).json(user);
     } catch (err) {
-      res.status(500).json(err);
+     return res.status(500).json(err);
     }
   },
 
@@ -84,13 +84,13 @@ module.exports = {
       );
 
       if (!friend) {
-        res.status(404).json({ message: "No user with that ID" });
+       return res.status(404).json({ message: "No user with that ID" });
       }
 
-      res.status(200).json(friend);
+     return res.status(200).json(friend);
     } catch (err) {
       console.log(err);
-      res.status(500).json(err);
+      return res.status(500).json(err);
     }
   },
 
