@@ -13,6 +13,7 @@
 This repository is an exhibition of an API designed for a social network web application. The user can consult the repo to learn how to create an API for a social network web application, using the Mongoose object data modeling library (ODM). The project makes use of Node.js to work with a back end, the Express package to design and configure an API, the Api-Routes package to use a declarative system for creating express API routes, the Moment package to display dates, and the Mongoose package to effectively provide a schema-based solution to model application data.
 
 Here is the demonstration of the application.
+
 [Full Video demo of the application.](https://drive.google.com/file/d/1HWbqRnFTaaM7ntrFRWOY23RYOSW371kD/view?usp=sharing)
 ![GIF image of the application.](./assets/screenshots/demo-1.gif)
 
